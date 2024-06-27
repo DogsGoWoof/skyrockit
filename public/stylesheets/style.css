@@ -33,11 +33,12 @@ form {
     justify-content: space-evenly;
     width: 20em;
     height: 50%;
-    background-color: #f6e7e7;
+    background-color: #f6e7e7aa;
     padding: 30px 40px 20px 40px;
     border-radius: 20px;
     color: #4b598e;
     font-weight: bold;
+    margin-top: -1.5dvh;
 }
 
 input {
@@ -210,4 +211,19 @@ select {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+fieldset { 
+    text-align: center;
+    border: 1dvh solid white;
+    border-radius: 3.5dvh; 
+    border-top: none; 
+    border-bottom: none;
+    /* background: no-repeat url('https://d3e54emdgoy1fq.cloudfront.net/uploads/product/image/403713/large_ef8de-459-K8611M-Clipboards-Document-Holders-Geocan-Clipboard-with-6-Inch-Wide-Nickel-Plated-Clip.jpg');
+    background-position: center;
+    background-size: 130%; */
+}
+
+legend {
+    translate: 0 -1dvh;
 }

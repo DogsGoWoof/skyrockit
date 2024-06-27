@@ -1,3 +1,46 @@
+@keyframes rocket {
+    20% {
+        rotate: -45deg;
+    }
+    30% {
+        transform: translate(.1dvh, .1dvh);
+    }
+    35% {
+        transform: translate(-.1dvh, -.2dvh);
+    }
+    40% {
+        transform: translate(.2dvh, .2dvh);
+    }
+    44% {
+        transform: translate(.1dvh, .2dvh);
+    }
+    48% {
+        transform: translate(-.1dvh, -.2dvh);
+    }
+    49% {
+        transform: translate(.1dvh, .1dvh);
+    }
+    50% {
+        transform: translate(-.1dvh, .1dvh);
+    }
+    55% {
+        transform: translate(.1dvh, -.1dvh);
+    }
+    60% {
+        transform: translate(.1dvh, -.4dvh);
+    }
+    75% {
+        rotate: -45deg;
+        transform: translate(10dvh, -10dvh);
+    }
+    90% {
+        rotate: -45deg;
+    }
+    100% {
+        rotate: 0;
+    }
+}
+
 .navbar {
     display: flex;
     flex-direction: row;
@@ -11,6 +54,7 @@
     color: #ce4866;
     size: 1em !important;
     margin: 0;
+    display: flex;
 }
 
 .authlink {
@@ -22,4 +66,12 @@
 
 .authlink:hover {
     color: white;
+}
+
+#rocket {
+    transition: all linear;
+}
+
+#rocket:hover {
+    animation: rocket 3s 1;
 }
